@@ -1,6 +1,6 @@
 /* google font start */
 
-.quicksand-ttt{
+.quicksand-basic{
   font-family: "Quicksand", serif;
   margin: 0;
 }
@@ -477,7 +477,7 @@
   gap: 15px;
 }
 
-@media screen and (max-width:576px){
+@media screen and (max-width:768px){
   .storiescart{
     display: none;
   }
@@ -490,16 +490,57 @@
   .storiescart-2{
     width: 100%;
   } 
-  .storiescart2{
+  /* .storiescart2{
     margin: 0 16px 16px 0px;
-  }
+  } */
   .storiescart2{
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+  .footer-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 /* Our Stories end */
 
-.bgcolor{
+.footer-section{
   background-color: #01ACFD;
+  margin-top: 0pxpx;
+  padding-top: 20px;
+}
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 30px 30px 80px;
+  
+}
+.footer-list {
+  display: inline-block;
+  list-style: none;
+  
+  
+}
+.footer-list li{
+  color: white;
+  font-size: 15px;
+  font-weight: 200px;
+}
+.list-title{
+  font-size: 18px;
+  margin-top: 0px;
+  
+}
+.fotter-title{
+  color: white;
+  font-size: 22px;
+  font-weight: 700px;
+
+}
+.footer-logo{
+  display: flex;
+}
+.footer-description{
+  color: white;
+  font-size: 15px;
+  font-weight: 200px;
 }
