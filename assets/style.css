@@ -111,7 +111,7 @@
   }
 
   .header{
-    padding: 16px 12px;
+    padding: 12px 16px;
     width: auto;
     border: 1px solid orange;
   }
@@ -152,6 +152,24 @@
     margin: 24px 0;
   }
 
+  /* header section media query */
+@media screen and (max-width:576px){
+  .hero{
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .hero-t{
+    text-align: center;
+    font-size: 32px;
+  }
+  .heroimg{
+    flex-direction: row;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /* hero section end */
 
 /* cart section start*/
@@ -161,6 +179,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 80px;
+  background-position: center;
 }
 
 .title{
@@ -175,6 +194,8 @@
 .cartgrup{
   display: flex;
   gap: 28px;
+  text-align: center;
+  
 }
 
 .cartdiv{
@@ -183,6 +204,7 @@
   border: 1px solid #DEF5FF;
   background-image: linear-gradient(#DEF5FF, white, white, white);
   border-radius: 18px;
+  max-width: 360px;
 }
 
 .cartdiv2{
@@ -191,6 +213,7 @@
   border: 1px solid #FFF4DC;
   background-image: linear-gradient(#FFF4DC, white, white, white);
   border-radius: 18px;
+  max-width: 360px;
 }
 
 .cartdiv3{
@@ -199,6 +222,7 @@
   border: 1px solid #F2E8FF;
   background-image: linear-gradient(#F2E8FF, white, white, white);
   border-radius: 18px;
+  max-width: 360px;
 }
 
 .carttitle{
@@ -232,6 +256,39 @@
   font-weight: 700;
 }
 
+@media screen and (max-width:576px){
+  .cartgrup{
+    flex-direction: column;
+    margin: auto;
+  }
+  .cartgrup, .cartgrup2 .cartgrup3{
+    max-width: 350px;
+  }
+
+  .carttitle{
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .cartimg{
+    width: 90px;
+  }
+
+  .cartdes{
+    font-size: 9px;
+    font-weight: 500;
+  }
+
+  .arow{
+    display: none;
+  }
+  
+  .carttitle{
+    font-size: 25px;
+    font-weight: 700;
+  }
+}
+
 /* cart section end*/
 
 /* arow */
@@ -243,3 +300,151 @@
   font-size: 50px;
   color: orange;
 }
+
+/* Our Stories start */
+.stories-group{
+  display: flex;
+  gap: 18px;
+}
+
+.Stories-div{
+  background-image: url("../img/bg.png"),linear-gradient(#ffffff, #fea10115, #fea10123, #fea10157);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 80px;
+  padding: 50px;
+  
+}
+.storybtn1{
+  text-align: center;
+}
+.storybtn{
+  font-size: 20px;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 61px 10px 61px;
+  border-radius: 12px;
+  margin: 80px 0 10px 0;
+  
+}
+
+.date{
+  position: absolute;
+  z-index: 9999;
+  top: 287px;
+  background-color: #3CD8E8;
+  border-radius: 47px;
+  padding: 15px 25px;
+  margin-left: 38px;
+  color: #ffffff;
+}
+
+.storyheading{
+  font-size: 24px;
+  font-weight: 700;
+  margin: 61px 50px 47px 38px;
+}
+
+.story-des{
+  margin: 0px 68px 34px 38px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: #666666;
+}
+
+
+
+.date-text{
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.storyimg{
+  width: 500px;
+  border-radius: 16px 16px 0 0 ;
+}
+
+.Stories-title{
+  text-align: center;
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.storiescart{
+  border-radius: 16px;
+  background-color: white;
+  width: 500px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+/* story 2nd row */
+
+.date-2{
+  position: absolute;
+  z-index: 9999;
+  top: 157px;
+  background-color: #95B226;
+  border-radius: 47px;
+  padding: 9px 17px;
+  margin-left: 38px;
+  color: #ffffff;
+}
+
+.date-text-2{
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+
+.story-des{
+  margin: 0px 68px 34px 38px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: #666666;
+}
+
+
+
+
+.storyimg-2{
+  border-radius: 16px 16px 0 0 ;
+  height: 177px;
+  width: 250px;
+}
+
+/* .Stories-title2{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 43px 0px 33px 0px;
+} */
+.storyheading2{
+  font-size: 15px;
+  font-weight: 700;
+  margin: 43px 54px 33px 37px;
+}
+.storiescart-2{
+  border-radius: 16px;
+  background-color: white;
+  width: 250px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+
+.storiescart2{
+  display: grid;
+  grid:  auto/ auto  auto;
+  gap: 15px;
+}
+
+/* Our Stories end */
