@@ -155,8 +155,8 @@
   /* header section media query */
 @media screen and (max-width:576px){
   .hero{
-    flex-direction: column;
-    margin-top: 0px;
+    flex-direction: column-reverse;
+    margin: 10px;
   }
   .hero-t{
     text-align: center;
@@ -262,7 +262,8 @@
     margin: auto;
   }
   .cartgrup, .cartgrup2 .cartgrup3{
-    max-width: 350px;
+    width: 400px;
+
   }
 
   .carttitle{
@@ -447,18 +448,24 @@
   gap: 15px;
 }
 
-@media screen and (max-width:576px){
+@media screen and (max-width:768px){
   .storiescart{
     display: none;
   }
   .Stories-div{
     padding: 15px;
   }
-  .storyimg-2{
+  /* .storyimg-2{
     width: 250px;
   }
   .storiescart-2{
     width: 250px;
-  }
+  } */
+   .storiescart2{
+    margin: auto;
+   }
+   .storiescart-2{
+    height: 324px;
+   }
 }
 /* Our Stories end */
