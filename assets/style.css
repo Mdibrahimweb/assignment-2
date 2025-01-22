@@ -418,15 +418,15 @@
 .storyimg-2{
   border-radius: 16px 16px 0 0 ;
   height: 177px;
-  width: 250px;
+  width: 260px;
 }
 
-/* .Stories-title2{
+.Stories-title2{
   text-align: center;
   font-size: 15px;
   font-weight: 700;
   margin-bottom: 43px 0px 33px 0px;
-} */
+} 
 .storyheading2{
   font-size: 15px;
   font-weight: 700;
@@ -435,7 +435,7 @@
 .storiescart-2{
   border-radius: 16px;
   background-color: white;
-  width: 250px;
+  width: 260px;
   position: relative;
   padding-bottom: 20px;
 }
@@ -453,6 +453,12 @@
   }
   .Stories-div{
     padding: 15px;
+  }
+  .storyimg-2{
+    width: 250px;
+  }
+  .storiescart-2{
+    width: 250px;
   }
 }
 /* Our Stories end */
