@@ -485,13 +485,17 @@
     padding: 15px;
   }
   .storyimg-2{
-    width: 250px;
+    width: 100%;
   }
   .storiescart-2{
-    width: 250px;
+    width: 100%;
   } 
   .storiescart2{
     margin: 0 16px 16px 0px;
+  }
+  .storiescart2{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }
 /* Our Stories end */
