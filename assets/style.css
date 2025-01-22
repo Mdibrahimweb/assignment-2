@@ -447,4 +447,12 @@
   gap: 15px;
 }
 
+@media screen and (max-width:576px){
+  .storiescart{
+    display: none;
+  }
+  .Stories-div{
+    padding: 15px;
+  }
+}
 /* Our Stories end */
