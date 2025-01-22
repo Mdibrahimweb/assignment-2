@@ -175,6 +175,11 @@
   .description{
     font-size: 20px;
     font-weight: 500;
+    padding: 20px;
+    margin: 0;
+  }
+  .heropic{
+    width: 500px;
   }
 
 }
@@ -468,7 +473,7 @@
 
 .storiescart2{
   display: grid;
-  grid:  auto/ auto  auto;
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
 
@@ -490,3 +495,7 @@
   }
 }
 /* Our Stories end */
+
+.bgcolor{
+  background-color: #01ACFD;
+}
